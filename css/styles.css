@@ -1,5 +1,15 @@
-body {
+/*
+三種selector的優先度
+Id > Class > Tag
+Id在一個畫面之中只能用一次
+Class可以重複使用
+一個Element只能有一個Id, 但可以有很多個Class
+*/
+/**********Tag selectors**********/
+
+div {
     background-color: #EAF6F6;
+    text-align: center;
 }
 
 hr {
@@ -17,3 +27,28 @@ h1 {
 h3 {
     color: #66BFBF;
 }
+
+h3:hover {
+    color: black;
+}
+
+/**********Class selectors**********/
+
+.viainno {
+    color: #ffaaa5;
+    font-size: 25px;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+.marginZero {
+    margin: 0;
+}
+
+/**********Id selectors**********/
+
+/* #heading {
+    color: blue;
+} */
