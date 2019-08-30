@@ -48,7 +48,7 @@ h3 {
 
 .top-container {
     background-color: #EAF6F6;
-    height: 400px;
+    height: 420px;
     position: relative;
 }
 
@@ -66,7 +66,7 @@ h3 {
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .viainno {
