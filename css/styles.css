@@ -9,7 +9,7 @@ Class可以重複使用
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #EAF6F6;
+    text-align: center;
 }
 
 hr {
@@ -23,37 +23,37 @@ hr {
 }
 
 h1 {
+    /* 
+    瀏覽器沒有任何縮放時16px = 100% = 1em
+    px不會隨著瀏覽器縮放而改變大小，%、em則會跟著瀏覽器縮放改變
+    rem：忽略parent的設定，直接採用本身的設定
+    推薦使用rem
+     */
+    font-size: 5.625rem;
     color: #66BFBF;
     font-family: 'Sacramento', cursive;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 h3 {
-    color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
-}
-
-h3:hover {
-    color: black;
-}
-
-th {
-    text-align: center;
-}
-
-td {
-    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
 
 /**********Class selectors**********/
 
-.topBar {
-    height: 80px;
+.top-container {
+    background-color: #EAF6F6;
+    height: 400px;
     position: relative;
-    margin-top: 10px;
 }
 
-.textAlignCenter {
-    text-align: center;
+.middle-container {
+    background-color: #eae9e9;
 }
 
 .tableAlignCenter {
@@ -61,13 +61,12 @@ td {
     margin-right: auto;
 }
 
-.topBarImage {
-    position: absolute;
-    height: 50px;
-    width: 50px;
+.circle-image {
+    position: relative;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
-    top: 15px;
-    left: 15px;
+    margin-top: 0px;
 }
 
 .viainno {
@@ -81,6 +80,12 @@ td {
 
 .marginZero {
     margin: 0;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    padding-top: 10px;
 }
 
 /**********Id selectors**********/
